@@ -134,9 +134,7 @@ h1 {
         height: 1px;
         background-color: #205E61;
     }
-}
 
-@media screen and (max-width:350px) {
     .user-address {
         flex-direction: column;
         gap: 1rem;
@@ -146,13 +144,11 @@ h1 {
     .user-city {
         text-align: unset;
     }
+}
 
+@media screen and (max-width:350px) {
     .user-achievments {
         flex-direction: column;
         gap: 2rem;
-    }
-
-    .wrapper {
-        min-width: calc(100% - 1rem);
     }
 }
