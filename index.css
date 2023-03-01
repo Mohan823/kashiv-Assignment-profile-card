@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: #205E61;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.wrapper {
+    display: flex;
+    background-color: #8BF5FA;
+    padding: 2rem;
+    gap: 2rem;
+    color: #205E61;
+    border-radius: 0.5rem;
+    transition: opacity 1s;
+    animation: wiggle 3s;
+}
+
+@keyframes wiggle {
+    0% {
+        transform: skew(20deg, 30deg) scale(1);
+        box-shadow: none;
+        opacity: 0;
+    }
+
+    40% {
+        transform: scale(1.1);
+        box-shadow: 0 0 1rem #fff;
+        opacity: 1;
+    }
+
+    60% {
+        transform: scale(1.1);
+        box-shadow: 0 0 1rem #fff;
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1);
+        box-shadow: none;
+    }
+}
+
+.user {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.vertical {
+    width: 1px;
+    background-color: #205E61;
+}
+
+.user span {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-color: #3F979B;
+    padding: 0.2rem 1rem;
+    border-radius: 100vmax;
+}
+
+
+.user-profile {
+    position: relative;
+    isolation: isolate;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border-radius: 100vmax;
+    overflow: hidden;
+    width: 5rem;
+    height: 5rem;
+    background-color: rgb(197, 255, 236);
+}
+
+.icon-user {
+    margin-bottom: -0.3rem;
+    width: 4rem;
+    height: 4rem;
+    object-fit: cover;
+    border-radius: 100vmax;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+
+
+.user-address {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+    gap: 5rem;
+}
+
+.user-city {
+    text-align: right;
+}
+
+.icon {
+    width: 2rem;
+    height: 2rem;
+    fill: #205E61;
+}
+
+.user-achievments {
+    justify-content: space-evenly;
+    display: flex;
+}
+
+.user-achievment {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.user-achievment span:first-child {
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.count {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
